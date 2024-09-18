@@ -1,0 +1,138 @@
+.contact-us {
+  @include devices(breackpoint-1300) {
+    &__desc {
+      width: 604px;
+    }
+  }
+
+  @include devices(breackpoint-1200) {
+    padding-top: 65px;
+
+    &__callback {
+      padding: 20px;
+      width: 360px;
+      height: 415px;
+    }
+
+    &__callback-title {
+      font-size: 32px;
+    }
+
+    &__form-btn {
+      margin-top: 18px;
+    }
+  }
+
+  @include devices(breackpoint-1100) {
+    &__desc {
+      width: 506px;
+    }
+  }
+
+  @include devices(breackpoint-1024) {
+    padding-top: 50px;
+
+    &__callback {
+      width: 301px;
+      height: 337px;
+    }
+
+    &__callback-form {
+      margin-top: 14px;
+      gap: 10px;
+    }
+
+    &__callback-title {
+      font-size: 24px;
+      font-family: $montserrat-800;
+    }
+
+    &__form-input {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+
+    &__form-input--area {
+      height: 90px;
+    }
+
+    &__form-btn {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+
+    &__desc-text,
+    &__desc-position {
+      font-size: 14px;
+    }
+
+    &__desc-name {
+      font-size: 16px;
+    }
+  }
+
+  @include devices(breackpoint-900) {
+    &__desc {
+      width: 405px;
+    }
+  }
+
+  @include devices(breackpoint-800) {
+    &__desc {
+      width: 301px;
+    }
+  }
+
+
+  @include devices(breackpoint-700) {
+    padding-top: 50px;
+
+    &__callback {
+      position: unset;
+      width: 500px;
+    }
+
+    &__callback-form {
+      width: 350px;
+    }
+
+    &__inner {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &__desc {
+      margin: 0;
+      width: 506px;
+    }
+
+    &__desc-name {
+      margin-top: 10px;
+    }
+  }
+
+  @include devices(breackpoint-600) {
+    &__desc {
+      max-width: 100%;
+    }
+
+    &__desc-icon {
+      left: -13px;
+    }
+
+    &__callback,
+    &__callback-form {
+      max-width: 100%;
+    }
+  }
+
+  @include devices(breackpoint-500) {
+    &__form-btn {
+      padding: 12px 40px;
+    }
+  }
+}

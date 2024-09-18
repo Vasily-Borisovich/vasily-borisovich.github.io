@@ -1,0 +1,79 @@
+.contact-us {
+  padding: 100px 0 40px;
+
+  &__inner {
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  &__callback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    padding: 40px;
+    width: 393px;
+    height: 451px;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px 0px rgba(17, 17, 17, 0.3);
+    border-radius: 10px;
+  }
+
+  &__callback-title {
+    font-family: $montserrat-700;
+  }
+
+  &__callback-form {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  &__form-group,
+  &__form-input {
+    width: 100%;
+  }
+
+  &__form-input--area {
+    height: 115px;
+    resize: none;
+  }
+
+  &__form-btn {
+    margin-top: 24px;
+    padding: 15px 30px;
+  }
+
+  &__desc {
+    margin-top: 40px;
+    position: relative;
+    flex-direction: column;
+    width: 703px;
+  }
+
+  &__desc-icon {
+    position: absolute;
+    z-index: -1;
+    top: -33px;
+    left: -40px;
+  }
+
+  &__desc-text {
+    font-size: 18px;
+    font-family: $opensans-400;
+    line-height: 140%;
+  }
+
+  &__desc-name {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 155%;
+  }
+
+  &__desc-text {
+    line-height: 162%;
+  }
+}
+
+@import './_contact-us-media.scss';

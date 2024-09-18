@@ -1,0 +1,390 @@
+.cart-flat {
+  @include devices(breackpoint-1300) {
+    &__title {
+      font-size: 30px;
+    }
+  }
+
+  @include devices(breackpoint-1200) {
+    &__cart-slider {
+      width: 650px;
+    }
+
+    &__slider-nav-img {
+      width: 122px;
+    }
+
+    &__cart-desc-title {
+      font-size: 22px;
+    }
+
+    &__cart-desc-text {
+      font-size: 16px;
+    }
+
+    &__cart-desc-price {
+      margin-top: 20px;
+    }
+
+    &__cart-desc-location {
+      margin-top: 15px;
+    }
+
+    &__equipment {
+      margin-top: 70px;
+    }
+
+    &__equipment-list {
+      &:nth-child(1),
+      &:nth-child(2) {
+      margin-right: 40px;
+      }
+    }
+  }
+
+  @include devices(breackpoint-1100) {
+    &__cart {
+      margin-top: 30px;
+    }
+
+    &__cart-slider {
+      width: 536px;
+    }
+
+    &__slider-single-img {
+      height: 313px;
+    }
+
+    &__slider-nav {
+      padding: 0 45px;
+    }
+
+    &__slider-nav-img {
+      width: 109px;
+      height: 67px;
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 30px;
+      height: 30px;
+
+      img {
+        width: 8px;
+      }
+    }
+
+    .slick-prev {
+      left: 5px;
+    }
+
+    .slick-next {
+      right: 5px;
+    }
+
+    &__cart-desc {
+      margin-top: 25px;
+    }
+
+    &__cart-desc-title {
+      font-size: 18px;
+    }
+
+    &__cart-desc-text {
+      font-size: 14px;
+    }
+
+    &__cart-desc-price-number,
+    &__cart-desc-price-text,
+    &__cart-desc-location-link {
+      font-size: 16px;
+    }
+
+    &__cart-desc-btn,
+    &__bottom-btn {
+      padding: 10px 35px;
+      font-size: 16px;
+    }
+
+    &__equipment {
+      margin-top: 50px;
+    }
+
+    &__equipment-list  {
+      gap: 7px;
+      font-size: 16px;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-right: 25px;
+      }
+    }
+
+    &__equipment-item {
+      &::before {
+        top: 5px;
+      }
+    }
+
+    &__bottom-title {
+      font-size: 20px;
+    }
+  }
+
+  @include devices(breackpoint-1024) {
+    padding: 30px 0;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__equipment-list {
+      font-size: 14px;
+    }
+  }
+
+  @include devices(breackpoint-900) {
+    &__cart-desc-title {
+      font-size: 15px;
+    }
+
+    &__cart-desc-text {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    &__cart-desc-price {
+      margin-top: 10px;
+    }
+
+    &__cart-desc-price-number,
+    &__cart-desc-price-text,
+    &__cart-desc-location-link {
+      font-size: 12px;
+    }
+
+    &__cart-desc-location {
+      margin-top: 10px;
+    }
+
+    &__cart-slider {
+      width: 440px;
+    }
+
+    &__slider-single-img {
+      height: 265px;
+    }
+
+    &__slider-nav {
+      padding: 0 38px;
+    }
+
+    &__slider-nav-img {
+      width: 89px;
+      height: 53px;
+    }
+
+    .slick-prev {
+      left: 2px;
+    }
+
+    .slick-next {
+      right: 2px;
+    }
+  }
+
+  @include devices(breackpoint-800) {
+    &__cart {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &__cart-slider {
+      width: 540px;
+    }
+
+    &__slider-single-img {
+      height: 335px;
+    }
+
+    &__slider-nav {
+      padding: 0 44px;
+    }
+
+    &__slider-nav-img {
+      width: 109px;
+      height: 73px;
+    }
+
+    &__cart-desc {
+      margin-top: 0;
+    }
+
+    &__cart-desc-btn {
+      margin-top: 15px;
+    }
+
+    &__equipment {
+      margin-top: 35px;
+    }
+
+    &__equipment-lists {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+    }
+
+    &__equipment-list {
+      &:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      &:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 7px;
+      }
+
+      &:nth-child(3) {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+      }
+    }
+
+    &__equipment-item {
+      &::before {
+        top: 4px;
+      }
+    }
+  }
+
+  @include devices(breackpoint-600) {
+    &__cart-slider {
+      width: 440px;
+    }
+
+    &__slider-single-img {
+      height: 265px;
+    }
+
+    &__slider-nav {
+      padding: 0 38px;
+    }
+
+    &__slider-nav-img {
+      width: 89px;
+      height: 53px;
+    }
+
+    &__equipment-list {
+      font-size: 12px;
+      gap: 5px;
+    }
+
+    &__equipment-item {
+      &::before {
+        width: 5px;
+        height: 5px;
+      }
+    }
+
+    &__cart-desc-btn,
+    &__bottom-btn {
+      padding: 10px 25px;
+      font-size: 14px;
+    }
+  }
+
+  @include devices(breackpoint-500) {
+    &__slider-nav {
+      display: none !important;
+    }
+
+    &__cart-slider {
+      width: 360px;
+    }
+
+    &__slider-single-img {
+      height: 225px;
+    }
+
+    .slick-prev,
+    .slick-next {
+      background-color: #2b7af171;
+    }
+
+    .slick-prev {
+      left: -10px;
+    }
+
+    .slick-next {
+      right: -10px;
+    }
+
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      }
+
+      button {
+        width: 10px;
+        height: 10px;
+        border: 1px solid #02000077;
+        border-radius: 50%;
+
+        ::before {
+          color: none;
+        }
+      }
+
+      .slick-active button {
+        border: none;
+        width: 20px;
+        background:  linear-gradient(90deg, #FF7A00 0.2%, #FFB039 99.82%);
+        border-radius: 10px;
+      }
+    }
+  }
+
+  @include devices(breackpoint-450) {
+    &__equipment-lists {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    &__equipment-list {
+      &:nth-child(2) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      &:nth-child(3) {
+        grid-column: 1;
+        grid-row: auto;
+        width: 300px;
+      }
+    }
+  }
+
+  @include devices(breackpoint-400) {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__cart-slider {
+      width: 285px;
+    }
+
+    &__slider-single-img {
+      height: 192px;
+    }
+  }
+}

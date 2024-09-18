@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../css/main.css">
+  <link rel="stylesheet" type="text/css" href="./../js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./../js/slick/slick-theme.css"/>
+  <title>Аренда квартир 59</title>
+</head>
+<body>
+  <div class="wrapper flex">
+    <div id="overlay-sheet"></div>
+
+    <header class="header">
+    <div class="background-menu bottom-0"></div>
+      <div class="container">
+        <div class="nav flex">
+          <div class="logo nav__logo flex">
+            <img src="./../img/svg/logo.svg" alt="лого аренда квартир 59">
+          </div>
+          <nav class="nav__menu nav-menu flex">
+            <div class="nav-menu__inner flex">
+              <input class="nav-menu__toggle" id="toggle" type="checkbox"/>
+              <label class="nav-menu__btn flex" for="toggle">
+                <span></span>
+              </label>
+              <div id="overlay"></div>
+              <ul class="nav-menu__lists flex">
+                <li class="nav-menu__item"><a class="nav-menu__link" href="./../index.html">Главная</a></li>
+                <li class="nav-menu__item"><a class="nav-menu__link" href="./cart-item.html">Квартиры</a></li>
+                <li class="nav-menu__item"><a class="nav-menu__link" href="#contact-us">Контакты</a></li>
+                <li class="nav-menu__item"><a class="nav-menu__link" href="#about-us">О нас</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="nav__contacts contacts flex-align">
+            <a class="nav__contacts-email contacts__email flex-align" href="mailto:mail@yandex.ru">
+              <span class="nav__contacts-email-icon contacts__email-icon flex-align">
+                <img src="./../img/svg/email-blue.svg" alt="Иконка почта">
+              </span>
+              <p class="nav__contacts-email-text contacts__email-text">mail@yandex.ru</p>
+            </a>
+            <a class="nav__contacts-tel contacts__tel flex-align"  href="tel:+79197142500">
+              <span class="nav__contacts-tel-icon contacts__tel-icon flex-align">
+                <img src="./../img/svg/Phone-blue.svg" alt="Иконка телефон">
+              </span>
+              <p class="nav__contacts-tel-text contacts__tel-text">+7 (950) 444-45-44</p>
+            </a>
+          </div>
+          <button class="btn nav__btn" id="modal-open">
+            <p class="nav__btn-text" >Заказать звонок</p>
+            <span class="nav__btn-icon">
+              <img src="./../img/svg/gui_operator_icon_157620.svg" alt="icon call operator">
+            </span>
+          </button>
+          <div class="nav__modal flex" id="modal">
+            <button class="nav__modal-btn-close-inner flex" id="modal-close">
+              <span class="nav__modal-btn-close"></span>
+            </button>
+            <h3 class="nav__modal-title title">Заказать звонок</h3>
+            <p class="nav__modal-text">Оставьте заявку и мы свяжемся с Вами в ближайшее время!</p>
+            <form class="nav__form form flex">
+              <div class="nav__form-group form-group">
+                <input class="nav__form-input form-input" type="text" name="name" id="name" placeholder="Имя">
+              </div>
+              <div class="nav__form-group form-group">
+                <input class="nav__form-input form-input" type="tel" name="phone" id="phone" placeholder="Телефон">
+              </div>
+            </form>
+            <a class="nav__modal-btn btn" href="#">Отправить</a>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+  <main class="main">
+    <section class="cart-flat">
+      <div class="container">
+        <h2 class="cart-flat__title title">1-к квартира, 31 м², 1/5 эт.</h2>
+        <div class="cart-flat__cart flex">
+          <div class="cart-flat__cart-slider flex">
+            <div class="cart-flat__slider-single slider-single">
+              <div class="cart-flat__slider-single-content">
+                <div class="cart-flat__slider-single-img">
+                  <img class="cart-flat__slider-img" src="./../img/cart-item/flat-img-1/flat-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="cart-flat__slider-single-content">
+                <div class="cart-flat__slider-single-img">
+                  <img class="cart-flat__slider-img" src="./../img/cart-item/flat-img-1/flat-2.jpg" alt="">
+                </div>
+              </div>
+              <div class="cart-flat__slider-single-content">
+                <div class="cart-flat__slider-single-img">
+                  <img class="cart-flat__slider-img" src="./../img/cart-item/flat-img-1/flat-3.jpg" alt="">
+                </div>
+              </div>
+              <div class="cart-flat__slider-single-content">
+                <div class="cart-flat__slider-single-img">
+                  <img class="cart-flat__slider-img" src="./../img/cart-item/flat-img-1/flat-4.jpg" alt="">
+                </div>
+              </div>
+              <div class="cart-flat__slider-single-content">
+                <div class="cart-flat__slider-single-img">
+                  <img class="cart-flat__slider-img" src="./../img/cart-item/flat-img-1/flat-5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-flat__slider-nav slider-nav">
+              <div class="cart-flat__slider-nav-content">
+                <div class="cart-flat__slider-nav-img">
+                  <img class="cart-flat__slider-img" src="./../img/cart-item/flat-img-1/flat-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="cart-flat__slider-nav-content">
+                <div class="cart-flat__slider-nav-img">
+                  <img class="cart-flat__slider-img" src="./../img/cart-item/flat-img-1/flat-2.jpg" alt="">
+                </div>
+              </div>
+              <div class="cart-flat__slider-nav-content">
+                <div class="cart-flat__slider-nav-img">
+                  <img class="cart-flat__slider-img" src="./../img/cart-item/flat-img-1/flat-3.jpg" alt="">
+                </div>
+              </div>
+              <div class="cart-flat__slider-nav-content">
+                <div class="cart-flat__slider-nav-img">
+                  <img class="cart-flat__slider-img" src="./../img/cart-item/flat-img-1/flat-4.jpg" alt="">
+                </div>
+              </div>
+              <div class="cart-flat__slider-nav-content">
+                <div class="cart-flat__slider-nav-img">
+                  <img class="cart-flat__slider-img" src="./../img/cart-item/flat-img-1/flat-5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-flat__cart-desc flex">
+            <h3 class="cart-flat__cart-desc-title">Однокомнатная квартира</h3>
+            <p class="cart-flat__cart-desc-text">Сдам 1- квартиру с балконом есть всё необходимое для проживания выписываю ДОКУМЕНТЫ ЧЕК ОНЛАЙН 25+звонить смс не читаю</p>
+            <div class="cart-flat__cart-desc-price flex">
+              <p class="cart-flat__cart-desc-price-number">1 200 ₽</p>
+              <p class="cart-flat__cart-desc-price-text">за сутки</p>
+            </div>
+            <div class="cart-flat__cart-desc-location flex-align">
+              <span class="cart-flat__cart-desc-location-icon">
+                <img src="./../img/2-our-apartments/Location_Icon.svg" alt="Иконка локации">
+              </span>
+              <a class="cart-flat__cart-desc-location-link" href="#">Березники, ул. Юбилейная 108</a>
+            </div>
+              <a class="cart-flat__cart-desc-btn btn" href="#">Забронировать</a>
+          </div>
+        </div>
+        <div class="cart-flat__equipment">
+          <h3 class="cart-flat__equipment-title">Оснащение:</h3>
+          <div class="cart-flat__equipment-lists flex">
+            <ul class="cart-flat__equipment-list flex">
+              <li class="cart-flat__equipment-item">
+                <p>Холодильник</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>Стиральная машина</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>СВЧ</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>Телевизор плазма</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>Цифровое телевидение</p>
+              </li>
+            </ul>
+            <ul class="cart-flat__equipment-list flex">
+              <li class="cart-flat__equipment-item">
+                <p>Сушка</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>Балкон</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>Домофон</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>Wi -fi</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>Вся посуда</p>
+              </li>
+            </ul>
+            <ul class="cart-flat__equipment-list flex">
+              <li class="cart-flat__equipment-item">
+                <p>Два комплекта полотенец</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>Всегда качественное постельное белье</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>Большой, комфортный раздвижной диван</p>
+              </li>
+              <li class="cart-flat__equipment-item">
+                <p>Спальное место 1600х2000 (1 спальное место, размещение до 2-х человек, возможно докомплектация раскладушкой или большим надувным матрацем).</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cart-flat__bottom flex">
+          <h4 class="cart-flat__bottom-title">Все сделано с любовью для Вас!</h4>
+          <a class="cart-flat__bottom-btn btn" href="./cart-item.html">Смотреть все квартиры</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <div class="container">
+        <div class="about-us__inner flex">
+          <div class="about-us__desc flex">
+            <h2 class="about-us__desc-title title">О нас</h2>
+            <p class="about-us__desc-text">Сегодня &laquo;Домашняя гостиница&raquo;&nbsp;&mdash; одна из&nbsp;крупнейших в&nbsp;Пермском крае гостиничных сетей, динамично расширяющая географический охват и&nbsp;повышающая качество сервиса.</p>
+          </div>
+          <div class="about-us__icons flex">
+            <div class="about-us__icon-box flex-align">
+              <span class="about-us__icon">
+                <img src="./../img/3-about-us/deal-1.svg" alt="Иконка рукопожатия">
+              </span>
+              <div class="about-us__icon-desc flex">
+                <p class="about-us__icon-desc-number title">40+</p>
+                <p class="about-us__icon-desc-text">Клиентов</p>
+              </div>
+            </div>
+            <div class="about-us__icon-box flex-align">
+              <span class="about-us__icon">
+                <img src="./../img/3-about-us/review-2.svg" alt="">
+              </span>
+              <div class="about-us__icon-desc flex">
+                <p class="about-us__icon-desc-number title">100+</p>
+                <p class="about-us__icon-desc-text">Отзывов</p>
+              </div>
+            </div>
+            <div class="about-us__icon-box flex-align">
+              <span class="about-us__icon">
+                <img src="./../img/3-about-us/home-3.svg" alt="Иконка дом">
+              </span>
+              <div class="about-us__icon-desc flex">
+                <p class="about-us__icon-desc-number title">9</p>
+                <p class="about-us__icon-desc-text">Квартир</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-us__line-bottom"></div>
+      </div>
+    </section>
+
+    <section class="communication">
+      <div class="container">
+        <div class="communication__inner flex">
+          <div class="communication__communication-block flex">
+            <h2 class="communication__title title">Контакты</h2>
+            <div class="communication__callback flex">
+              <div class="communication__callback-street flex-align">
+                <span class="communication__callback-icon flex-align circle">
+                  <img src="./../img/svg/Location.svg" alt="иконка локации">
+                </span>
+                <p class="communication__callback-text">Пермский край, город Березники</p>
+              </div>
+              <div class="communication__callback-mail flex-align">
+                <span class="communication__callback-icon flex-align circle">
+                  <img src="./../img/svg/email.svg" alt=" иконка @email">
+                </span>
+                <a class="communication__callback-link" href="mailto:mail@yandex.ru">mail@yandex.ru</a>
+              </div>
+              <div class="communication__callback-number flex-align">
+                <span class="communication__callback-icon flex-align circle">
+                  <img src="./../img/svg/Phone.svg" alt="иконка телефона">
+                </span>
+                  <a class="communication__callback-link" href="tel:79197142500">+7 (919) 714-25-00</a>
+              </div>
+            </div>
+            <div class="communication__socials flex">
+              <div class="communication__social-instagram flex-align">
+                <span class="communication__social-icon circle flex-align">
+                  <img src="./../img/svg/insta.svg" alt="иконка инстаграм">
+                </span>
+                <p class="communication__social-text">arendakvartir59</p>
+                <a class="communication__social-btn btn" href="#">Подписаться</a>
+              </div>
+              <div class="communication__social-vk flex-align">
+                <span class="communication__social-icon circle flex-align">
+                  <img src="./../img/svg/icons8-вконтакте-20.svg" alt="Иконка ВК">
+                </span>
+                <p class="communication__social-text">arendakvartir59</p>
+                <a class="communication__social-btn btn" href="#">Подписаться</a>
+              </div>
+            </div>
+          </div>
+          <div class="communication__map-inner flex" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/20237/berezniki/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Березники</a><a href="https://yandex.ru/maps/geo/berezniki/53091497/?from=mapframe&ll=56.815466%2C59.404303&source=mapframe&utm_medium=mapframe&utm_source=maps&z=12.6" style="color:#eee;font-size:12px;position:absolute;top:14px;">Березники — карта, что посмотреть, фото, как добраться, координаты</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=56.815466%2C59.404303&mode=poi&poi%5Buri%5D=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA5MTQ5NxI70KDQvtGB0YHQuNGPLCDQn9C10YDQvNGB0LrQuNC5INC60YDQsNC5LCDQkdC10YDQtdC30L3QuNC60LgiCg0UOmNCFcugbUI%2C&source=mapframe&utm_source=mapframe&z=12.6" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__inner">
+          <h2 class="reviews__title title">Отзывы клиентов</h2>
+          <div class="reviews__carousel carousel">
+            <div class="reviews__content flex">
+              <div class="reviews__content-row-top flex-align">
+                <h3 class="reviews__content-title">Уютная квартира</h3>
+                <div class="reviews__content-stars flex-align">
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                </div>
+              </div>
+              <div class="reviews__content-text-desc">
+                <p>Первый раз отдыхали в Березниках, времени было мало соответственно жильё искали заранее. Залог вносили с опасением, и очень рады что они были напрасными. Всё супер. Нам понравилось!</p>
+              </div>
+              <div class="reviews__content-row-botton flex">
+                <div class="reviews__content-author flex">
+                  <p class="reviews__content-author-name">Екатерина Трушникова</p>
+                  <p class="reviews__content-author-sity">г. Пермь</p>
+                </div>
+                <div class="reviews__content-date">
+                  <p>2 января 2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__content flex">
+              <div class="reviews__content-row-top flex-align">
+                <h3 class="reviews__content-title">Клёвый вид на город</h3>
+                <div class="reviews__content-stars flex-align">
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                </div>
+              </div>
+              <div class="reviews__content-text-desc">
+                <p>Хочу поблагодарить за квартиру на ул. Юбилейной, д. 108. Удобное месторасположение, совсем рядом с центром. Квартира уютная, соседей не слышно, мы прекрасно отдохнули. Все что нужно для приготовления еды есть.</p>
+              </div>
+              <div class="reviews__content-row-botton flex">
+                <div class="reviews__content-author flex">
+                  <p class="reviews__content-author-name">Иван Огородников</p>
+                  <p class="reviews__content-author-sity">г. Краснодар</p>
+                </div>
+                <div class="reviews__content-date">
+                  <p>15 сентября 2019</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__content flex">
+              <div class="reviews__content-row-top flex-align">
+                <h3 class="reviews__content-title">Хорошая квартира</h3>
+                <div class="reviews__content-stars flex-align">
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                </div>
+              </div>
+              <div class="reviews__content-text-desc">
+                <p>Хотим выразить благодарность за квартиру на ул. Мюда, д. 15. Очень удобное расположение,квартира чистая и светлая, с тихими соседями. Остались только положительные впечатления от проживания!</p>
+              </div>
+              <div class="reviews__content-row-botton flex">
+                <div class="reviews__content-author flex">
+                  <p class="reviews__content-author-name">Василий Алибабаевич</p>
+                  <p class="reviews__content-author-sity">г. Кострома</p>
+                </div>
+                <div class="reviews__content-date">
+                  <p>15 сентября 2019</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__content flex">
+              <div class="reviews__content-row-top flex-align">
+                <h3 class="reviews__content-title">Уютная квартира</h3>
+                <div class="reviews__content-stars flex-align">
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                </div>
+              </div>
+              <div class="reviews__content-text-desc">
+                <p>Первый раз отдыхали в Березниках, времени было мало соответственно жильё искали заранее. Залог вносили с опасением, и очень рады что они были напрасными. Всё супер. Нам понравилось!</p>
+              </div>
+              <div class="reviews__content-row-botton flex">
+                <div class="reviews__content-author flex">
+                  <p class="reviews__content-author-name">Екатерина Трушникова</p>
+                  <p class="reviews__content-author-sity">г. Пермь</p>
+                </div>
+                <div class="reviews__content-date">
+                  <p>2 января 2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__content flex">
+              <div class="reviews__content-row-top flex-align">
+                <h3 class="reviews__content-title">Уютная квартира</h3>
+                <div class="reviews__content-stars flex-align">
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                  <span class="reviews__content-star-icon flex">
+                    <img src="./../img/svg/star5.svg" alt="Иконка звезда">
+                  </span>
+                </div>
+              </div>
+              <div class="reviews__content-text-desc">
+                <p>Первый раз отдыхали в Березниках, времени было мало соответственно жильё искали заранее. Залог вносили с опасением, и очень рады что они были напрасными. Всё супер. Нам понравилось!</p>
+              </div>
+              <div class="reviews__content-row-botton flex">
+                <div class="reviews__content-author flex">
+                  <p class="reviews__content-author-name">Екатерина Трушникова</p>
+                  <p class="reviews__content-author-sity">г. Пермь</p>
+                </div>
+                <div class="reviews__content-date">
+                  <p>2 января 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us" id="contact-us">
+      <div class="container">
+        <div class="contact-us__inner flex">
+          <div class="contact-us__callback flex-align">
+            <h3 class="contact-us__callback-title title">Напишите нам</h3>
+            <form class="contact-us__callback-form form flex">
+              <div class="contact-us__form-group form-group">
+                <input class="contact-us__form-input form-input" type="text" placeholder="Имя">
+              </div>
+              <div class="contact-us__form-group form-group">
+                <input class="contact-us__form-input form-input" type="email" placeholder="Email">
+              </div>
+              <div class="contact-us__form-group form-group">
+                <textarea class="contact-us__form-input contact-us__form-input--area form-input" placeholder="Ваше сообщение"></textarea>
+              </div>
+            </form>
+            <a class="contact-us__form-btn btn" href="">Отправить</a>
+          </div>
+          <div class="contact-us__desc flex">
+            <span class="contact-us__desc-icon">
+              <img src="./../img/svg/commas.svg" alt="Иконка запятые">
+            </span>
+            <p class="contact-us__desc-text">Дорогой гость, если у&nbsp;тебя есть какие-то пожелания или притензии по&nbsp;улучшению качества обслуживания или просто хочешь оставить свой комментарий, то&nbsp;заполни форму. Мы&nbsp;обязательно ответим тебе, или опубликуем его на&nbsp;нашем сайте.</p>
+            <h4 class="contact-us__desc-name title">Татьяна Вячеславовна</h4>
+            <p class="contact-us__desc-position">Директор гостиницы</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__bg-img">
+      <img src="./../img/bg-footer.webp" alt="Задний фон">
+    </div>
+    <div class="container">
+      <div class="footer__nav flex-align">
+        <div class="logo footer__logo">
+          <img src="./../img/svg/logo.svg" alt="лого аренда квартир 59">
+        </div>
+        <nav class="footer__nav-menu">
+          <ul class="footer__nav-menu-lists flex">
+            <li class="footer__nav-menu-item">
+              <a class="footer__nav-menu-link" href="./../index.html">Главная</a>
+            </li>
+            <li class="footer__nav-menu-item">
+              <a class="footer__nav-menu-link" href="./cart-item.html">Квартиры</a>
+            </li>
+            <li class="footer__nav-menu-item">
+              <a class="footer__nav-menu-link" href="#contact-us">Контакты</a>
+            </li>
+            <li class="footer__nav-menu-item">
+              <a class="footer__nav-menu-link" href="#about-us">О нас</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts contacts flex">
+        <a class="footer__contacts-tel contacts__tel flex-align" href="tel:+79197142500">
+            <span class="footer__contacts-tel-icon contacts__tel-icon flex-align">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12.8396 13.55L14.2396 12.15C14.4281 11.9638 14.6667 11.8363 14.9263 11.7831C15.1859 11.7298 15.4554 11.7531 15.7021 11.85L17.4083 12.5313C17.6576 12.6324 17.8713 12.8051 18.0226 13.0276C18.1738 13.25 18.2559 13.5123 18.2583 13.7813V16.9063C18.2569 17.0893 18.2184 17.2701 18.1452 17.4378C18.0721 17.6055 17.9657 17.7567 17.8326 17.8823C17.6995 18.0078 17.5423 18.1051 17.3706 18.1683C17.1988 18.2315 17.0161 18.2593 16.8333 18.25C4.87707 17.5063 2.46457 7.38128 2.00832 3.50628C1.98714 3.31599 2.0065 3.12337 2.0651 2.94109C2.12371 2.75882 2.22025 2.59102 2.34837 2.44874C2.47648 2.30645 2.63327 2.1929 2.80842 2.11557C2.98357 2.03823 3.17311 1.99885 3.36457 2.00003H6.38332C6.6527 2.00082 6.91569 2.08219 7.13845 2.23367C7.3612 2.38515 7.53355 2.5998 7.63332 2.85003L8.31457 4.55628C8.41473 4.80194 8.44028 5.07168 8.38804 5.33178C8.3358 5.59189 8.20807 5.83084 8.02082 6.01878L6.62082 7.41878C6.62082 7.41878 7.42707 12.875 12.8396 13.55Z" fill="#2B7AF1"/>
+              </svg>
+            </span>
+            <p class="footer__contacts-tel-text contacts__tel-text">+7 (919) 714-25-00</p>
+          </a>
+          <a class="footer__contacts-email contacts__email flex-align"  href="mailto:mail@yandex.ru">
+            <span class="footer__contacts-email-icon contacts__email-icon flex-align">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M18.4025 3H1.59751C1.43905 3.00018 1.28715 3.06086 1.17513 3.16872C1.06311 3.27658 1.00012 3.42282 1 3.57533V4.73273C1 4.78605 1.06008 4.84725 1.10917 4.872L9.94226 9.72817C9.96488 9.74062 9.99054 9.74707 10.0166 9.74685C10.0432 9.74692 10.0694 9.74008 10.0923 9.72705L18.6585 4.87673C18.7066 4.85085 18.8343 4.78245 18.8822 4.75095C18.9402 4.71293 19 4.6785 19 4.61033V3.5751C18.9998 3.42263 18.9368 3.27645 18.8248 3.16864C18.7128 3.06083 18.5609 3.00018 18.4025 3Z" fill="#2B7AF1"/>
+                <path d="M18.9254 6.47777C18.9024 6.46515 18.8763 6.45859 18.8498 6.45874C18.8234 6.4589 18.7974 6.46578 18.7746 6.47867L13.927 9.2239C13.9077 9.23473 13.8911 9.24961 13.8786 9.26744C13.8661 9.28526 13.8579 9.30557 13.8546 9.32686C13.8514 9.34815 13.8531 9.36987 13.8598 9.39041C13.8664 9.41095 13.8778 9.42979 13.8931 9.44552L18.7414 14.4758C18.7553 14.4904 18.7722 14.502 18.7909 14.5099C18.8097 14.5178 18.83 14.5218 18.8506 14.5217C18.8901 14.5217 18.9281 14.5065 18.9561 14.4796C18.9841 14.4526 18.9999 14.4161 18.9999 14.378V6.60265C19 6.57735 18.9932 6.55248 18.9801 6.53056C18.967 6.50863 18.9481 6.49042 18.9254 6.47777Z" fill="#2B7AF1"/>
+                <path d="M12.53 10.1457C12.507 10.1216 12.4761 10.1058 12.4425 10.1009C12.4088 10.0961 12.3745 10.1025 12.3451 10.1191L10.4021 11.2196C10.2882 11.2829 10.1592 11.3166 10.0278 11.3175C9.89627 11.3183 9.76683 11.2862 9.65214 11.2243L7.94214 10.2841C7.91453 10.2689 7.88264 10.2626 7.85108 10.2661C7.81951 10.2696 7.78992 10.2827 7.76658 10.3034L1.27303 16.1008C1.256 16.1161 1.24293 16.135 1.23486 16.156C1.22678 16.1771 1.22392 16.1997 1.22651 16.2219C1.2291 16.2442 1.23706 16.2656 1.24977 16.2844C1.26247 16.3032 1.27956 16.3189 1.29968 16.3303C1.40066 16.3874 1.49814 16.4146 1.59726 16.4146H18.2304C18.2595 16.4147 18.288 16.4065 18.3123 16.3911C18.3366 16.3757 18.3557 16.3538 18.3672 16.328C18.3788 16.3024 18.3824 16.2741 18.3775 16.2465C18.3726 16.219 18.3594 16.1934 18.3396 16.173L12.53 10.1457Z" fill="#2B7AF1"/>
+                <path d="M6.33782 9.61787C6.35502 9.60257 6.36824 9.58358 6.37641 9.56245C6.38458 9.54132 6.38747 9.51864 6.38486 9.49624C6.38224 9.47383 6.37418 9.45234 6.36134 9.43348C6.3485 9.41463 6.33124 9.39894 6.31094 9.38769L1.22278 6.59049C1.20007 6.57809 1.17438 6.57163 1.14827 6.57178C1.12216 6.57193 1.09654 6.57867 1.07399 6.59134C1.05143 6.604 1.03273 6.62214 1.01975 6.64395C1.00676 6.66576 0.999954 6.69046 1 6.71559V14.0551C0.999838 14.0831 1.00822 14.1106 1.0241 14.1341C1.03999 14.1576 1.06268 14.1761 1.08938 14.1873C1.11607 14.1985 1.1456 14.2019 1.17429 14.1971C1.20299 14.1924 1.2296 14.1796 1.25083 14.1604L6.33782 9.61787Z" fill="#2B7AF1"/>
+              </svg>
+            </span>
+            <p class="footer__contacts-email-text contacts__email-text">mail@yandex.ru</p>
+          </a>
+        </div>
+        <div class="footer__socials flex">
+          <a class="footer__socials-link flex-align" href="#">
+            <img src="./../img/svg/telegram.svg" alt="Telegram">
+          </a>
+          <a class="footer__socials-link flex-align" href="#">
+            <img src="./../img/svg/facebook.svg" alt="Facebook">
+          </a>
+          <a class="footer__socials-link flex-align" href="#">
+            <img src="./../img/svg/icons8-вконтакте-20.svg" alt="Вконтакте">
+          </a>
+          <a class="footer__socials-link flex-align" href="#">
+            <img src="./../img/svg/insta.svg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <div class="footer__border"></div>
+      <div class="footer__copygight flex">
+        <p class="footer__copygight-text">&copy;&nbsp;Copyright 2021, &laquo;Домашняя гостиница&raquo;</p>
+        <a class="footer__copygight-link" href="#">Пользовательское соглашение</a>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./../js/slick/slick.min.js"></script>
+  <script src="./../js/main.js"></script>
+  <script src="./../js/slick-flat.js"></script>
+</body>
+</html>

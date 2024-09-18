@@ -1,0 +1,163 @@
+.reviews {
+  padding: 100px 0;
+  background-color: $bg-color;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    color: white;
+  }
+
+  &__carousel {
+    margin-top: 40px;
+    z-index: 2;
+  }
+
+  &__content {
+    flex-direction: column;
+    padding: 40px;
+    max-width: 630px;
+    max-height: 292px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 5px;
+  }
+
+  &__content-row-top {
+    justify-content: space-between;
+  }
+
+  &__content-title,
+  &__content-author-name {
+    font-family: $montserrat-700;
+    color: $bg-color;
+    font-size: 20px;
+  }
+
+  &__content-stars {
+    gap: 3px;
+  }
+
+  &__content-star-icon svg {
+    width: inherit;
+    height: inherit;
+  }
+
+  &__content-text-desc {
+    font-family: $opensans-400;
+    margin-top: 23px;
+    color: #111;
+  }
+
+  &__content-row-botton {
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 38px;
+  }
+
+  &__content-author {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__content-author-name {
+    font-size: 14px;
+  }
+
+  &__content-author-sity {
+    font-family: $montserrat-500;
+    font-size: 12px;
+  }
+
+  &__content-date {
+    font-family: $montserrat-500;
+    font-size: 14px;
+  }
+
+  &__quotes {
+    position: absolute;
+    top: -50px;
+    right: -30px;
+
+    img {
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  // clider
+  .slick-prev,
+  .slick-next {
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .slick-prev {
+    left: -15px;
+    background: linear-gradient(270deg, #FF7A00 0.2%, #FFB039 99.82%);
+
+    img {
+      left: 45%;
+    }
+  }
+
+  .slick-next {
+    right: -15px;
+    background: linear-gradient(90deg, #FF7A00 0.2%, #FFB039 99.82%);
+
+    img {
+      left: 55%;
+    }
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    font-family: unset;
+    color: unset;
+  }
+
+  .slick-dots {
+    bottom: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+
+    button {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #ffffff77;
+      border-radius: 50%;
+
+      ::before {
+        color: none;
+      }
+    }
+
+    .slick-active button {
+      border: none;
+      width: 20px;
+      background:  linear-gradient(90deg, #FF7A00 0.2%, #FFB039 99.82%);
+      border-radius: 10px;
+    }
+  }
+}
+
+@import './reviews-media';

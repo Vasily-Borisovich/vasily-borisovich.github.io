@@ -1,0 +1,60 @@
+.communication {
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+  &__inner {
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__communication-block {
+    justify-content: space-between;
+    width: 450px;
+  }
+
+  &__communication-block,
+  &__callback,
+  &__socials {
+    flex-direction: column;
+  }
+
+  &__callback,
+  &__socials {
+    gap: 15px;
+    font-size: 18px;
+    color: #111;
+  }
+
+  &__callback-icon,
+  &__social-icon {
+    margin-right: 20px;
+  }
+
+  &__callback {
+    margin-top: 42px;
+  }
+
+  &__socials {
+    margin-top: 91px;
+  }
+
+  &__social-btn {
+    margin-left: auto;
+    padding: 9px 20px;
+    font-size: 14px;
+  }
+
+  &__map-inner {
+    border-radius: 10px;
+    width: 758px;
+    height: 429px;
+
+    iframe {
+      width: inherit;
+      height: inherit;
+      // width="758"
+    }
+  }
+}
+
+@import './_communication-media';

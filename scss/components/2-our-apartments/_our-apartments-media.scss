@@ -1,0 +1,167 @@
+.our-apartments {
+  @include devices(breackpoint-1300) {
+    padding: 30px 0;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__carts-inner {
+      gap: 15px;
+    }
+
+    &__cart {
+      height: 270px;
+    }
+
+    &__cart-title {
+      font-size: 22px;
+    }
+
+    &__cart-price-inner {
+      margin-top: 45px;
+    }
+
+    &__cart-price-text {
+      font-size: 16px;
+    }
+
+    &__cart-price-number {
+      font-size: 18px;
+    }
+
+    &__cart-bottom {
+      margin-top: 10px;
+    }
+
+    &__cart-location-link {
+      font-size: 15px;
+    }
+
+    &__cart-btn {
+      font-size: 12px;
+    }
+  }
+
+  @include devices(breackpoint-1100) {
+    &__cart-location-link {
+      font-size: 14px;
+    }
+  }
+
+  @include devices(breackpoint-1024) {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__carts-inner {
+      flex-wrap: nowrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    &__cart {
+      align-items: center;
+      padding: 10px;
+      width: calc(100% - 240px) !important;
+      height: 246px;
+      background-color: unset;
+      box-shadow: 0px 10px 20px 0px rgba(17, 17, 17, 0.10);
+      transition: unset;
+
+      &:hover {
+        transition: unset;
+        background-color: unset;
+      }
+    }
+
+    &__cart-img {
+      overflow: hidden;
+      position: relative;
+      top: unset;
+      left: unset;
+      width: 215px !important;
+      max-width: 100% !important;
+      height: 120px;
+      border-radius: 10px;
+      transform: unset;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 215px;
+      }
+    }
+
+
+    &__cart-top {
+      align-items: center;
+    }
+
+    &__cart-title {
+      display: none;
+    }
+
+    &__cart-title-2 {
+      display: block;
+      margin-top: 10px;
+      color: black;
+      font-size: 14px;
+    }
+
+
+    &__cart-price-inner {
+      margin-top: 27px;
+      justify-content: center;
+      color: black;
+    }
+
+    &__cart-price-text,
+    &__cart-price-number {
+      font-size: 12px;
+    }
+
+    &__cart-location {
+      display: none;
+    }
+
+    &__cart-btn {
+      font-size: 10px;
+      padding: 6px 47px;
+    }
+
+    &__btn {
+      margin-top: 40px;
+      width: 260px;
+      padding: 6px 15px;
+      font-size: 14px;
+    }
+  }
+
+  @include devices(breackpoint-800) {
+
+    &__cart {
+      padding: 10px 0;
+    }
+
+    &__cart-btn {
+      padding: 6px 30px;
+    }
+  }
+
+  @include devices(breackpoint-700) {
+    &__carts-inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__cart {
+      min-width: 135px;
+      max-width: 230px;
+      width: calc(100% - 240px) !important;
+      flex-grow: 1;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.rent-main {
+  padding-top: 31px;
+  padding-bottom: 57px;
+
+  &__top {
+    position: relative;
+  }
+
+  &__desc-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin-top: 80px;
+    color: black;
+    font-size: 40px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-family: $opensans-400;
+    font-size: 24px;
+  }
+
+  &__btn {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 60px;
+  }
+
+  &__bg-inner {
+    position: absolute;
+    right: -80px;
+    overflow-y: hidden;
+    height: 473px;
+    border-radius: 10px;
+    width: 895px;
+
+    img {
+      position: absolute;
+      width: inherit;
+    }
+  }
+
+  &__carts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+    grid-auto-rows: 231px;
+    gap: 20px;
+    margin-top: 164px;
+
+  }
+
+  &__cart-inner {
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 0px rgba(17, 17, 17, 0.30);
+  }
+
+  &__cart-icon {
+    margin-top: 40px;
+
+    img {
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  &__cart-text {
+    font-family: $opensans-400;
+    margin-top: 26px;
+    max-width: 265px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@import './rent-main-media';

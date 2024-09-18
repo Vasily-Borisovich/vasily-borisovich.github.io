@@ -1,0 +1,164 @@
+.our-flats {
+  @include devices(breackpoint-1300) {
+    padding-bottom: 50px;
+    &__carts-grid {
+      grid-auto-rows: 520px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__img {
+      height: 240px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__cart-title {
+      font-size: 22px;
+    }
+
+    &__cart-desc-text {
+      font-size: 16px;
+    }
+  }
+
+  @include devices(breackpoint-1200) {
+    &__carts-grid {
+      row-gap: 40px;
+    }
+  }
+
+  @include devices(breackpoint-1100) {
+    &__carts-grid {
+      grid-auto-rows: 420px;
+    }
+
+    &__img {
+      height: 200px;
+    }
+
+    &__cart-title {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+
+    &__cart-desc-text {
+      margin-top: 10px;
+      height: 53px;
+      font-size: 14px;
+    }
+
+    &__cart-price {
+      margin-top: 10px;
+    }
+
+    &__cart-price-number {
+      font-size: 18px;
+    }
+
+    &__cart-price-text {
+      font-size: 14px;
+    }
+
+    &__cart-location {
+      margin-top: 10px;
+      gap: 5px;
+    }
+
+    &__cart-location-link {
+      font-size: 14px;
+    }
+  }
+
+  @include devices(breackpoint-1024) {
+    padding: 25px 0;
+
+    &__carts-grid {
+      margin-top: 20px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+  }
+
+  @include devices(breackpoint-900) {
+    &__carts-grid {
+      grid-auto-rows: 355px;
+      column-gap: 17px;
+    }
+    &__img {
+      height: 170px;
+    }
+
+    &__cart-title {
+      font-size: 14px;
+    }
+
+    &__cart-desc-text {
+      height: 45px;
+      font-size: 12px;
+    }
+
+    &__cart-price {
+      margin-top: 5px;
+    }
+
+    &__cart-price-number {
+      font-size: 14px;
+    }
+
+    &__cart-price-text {
+      font-size: 12px;
+    }
+
+    &__cart-location-link {
+      font-size: 12px;
+    }
+  }
+
+  @include devices(breackpoint-800) {
+    &__carts-grid {
+      grid-template-columns: repeat(2, minmax(200px, 395px));
+      grid-auto-rows: 375px;
+      column-gap: 30px;
+    }
+
+    &__img {
+      height: 190px;
+    }
+  }
+
+  @include devices(breackpoint-700) {
+    &__carts-grid {
+      column-gap: 20px;
+    }
+  }
+
+  @include devices(breackpoint-600) {
+    &__carts-grid {
+      grid-auto-rows: 335px;
+    }
+
+    &__img {
+      height: 150px;
+    }
+  }
+
+  @include devices(breackpoint-500) {
+    &__carts-grid {
+      padding-top: 20px;
+      grid-template-columns: minmax(200px, 395px);
+      grid-auto-rows: 370px;
+      justify-content: center;
+      row-gap: 25px;
+    }
+
+    &__img {
+      height: 180px;
+    }
+  }
+}

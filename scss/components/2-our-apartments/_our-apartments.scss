@@ -1,0 +1,126 @@
+.our-apartments {
+  padding: 60px 0;
+
+  &__carts-inner {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  &__cart {
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 300px;
+    padding: 20px 20px 20px 40px;
+    border-radius: 10px;
+    background-color:rgba(17, 17, 17, 0.50);
+    transition: background-color 0.5s ease;
+    color: white;
+
+    &:nth-child(1),
+    &:nth-child(4) {
+      flex-grow: 1;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 522px;
+
+      .our-apartments__cart-img {
+        width: 520px;
+      }
+    }
+
+    &:hover {
+      transition: 0.5s;
+      background-color:rgba(17, 17, 17, 0.26);
+
+      .our-apartments__cart-img {
+        width: 760px;
+        transition: 0.5s;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        .our-apartments__cart-img {
+          width: 550px;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+
+  &__cart-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 738px;
+    transition: width 0.5s;
+    height: auto;
+
+    img {
+    width: inherit;
+    height: inherit;
+    }
+  }
+
+  &__cart-top {
+    flex-direction: column;
+  }
+
+  &__cart-title {
+    font-size: 24px;
+    color: inherit;
+  }
+
+  &__cart-title-2 {
+    display: none;
+  }
+
+  &__cart-price-inner {
+    margin-top: 65px;
+    gap: 10px;
+  }
+
+  &__cart-price-text {
+    font-size: 18px;
+  }
+
+  &__cart-price-number {
+    font-size: 20px;
+    font-family: $montserrat-800;
+  }
+
+  &__cart-bottom {
+    margin-top: 24px;
+    justify-content: space-between;
+  }
+
+  &__cart-location {
+    gap: 10px;
+  }
+
+  &__cart-location-link {
+    font-size: 18px;
+  }
+
+  &__cart-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    width: 304px;
+    margin: 60px auto 0;
+    padding: 15px 50px;
+  }
+}
+
+@import './our-apartments-media';

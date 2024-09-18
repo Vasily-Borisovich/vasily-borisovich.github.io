@@ -1,0 +1,408 @@
+.header {
+  @include devices(breackpoint-1100) {
+    padding: 15px 0;
+  }
+}
+
+.background-menu {
+  @include devices(breackpoint-1350) {
+    right: -47.4%;
+  }
+
+  @include devices(breackpoint-1300) {
+    right: 0;
+    width: 705px;
+  }
+
+  @include devices(breackpoint-1200) {
+    width: 675px;
+  }
+
+  @include devices(breackpoint-1100) {
+    width: 635px;
+    height: 509px;
+  }
+
+  @include devices(breackpoint-1024) {
+    width: 615px;
+  }
+
+  @include devices(breackpoint-900) {
+    width: 500px;
+  }
+
+  @include devices(breackpoint-700) {
+    width: 380px;
+  }
+
+  @include devices(breackpoint-600) {
+    width: 320px;
+  }
+
+  @include devices(breackpoint-500) {
+    width: 200px;
+  }
+
+  @include devices(breackpoint-380) {
+    width: 145px;
+  }
+}
+
+.nav {
+  @include devices(breackpoint-1350) {
+    &__logo {
+      margin-right: 40px;
+    }
+
+    &__btn {
+      margin-left: 15px;
+    }
+  }
+
+  @include devices(breackpoint-1200) {
+    &__btn {
+      padding: 15px 26px;
+      font-size: 16px;
+    }
+  }
+
+  @include devices(breackpoint-1300) {
+    &__logo {
+      margin-right: 0;
+      margin-left: 50px;
+    }
+  }
+
+  @include devices(breackpoint-1100) {
+    &__logo {
+      margin-left: 40px;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    &__btn {
+      padding: 12px 30px;
+      font-size: 14px;
+    }
+
+    &__modal-title {
+      font-size: 32px;
+    }
+
+    &__modal-text {
+      font-size: 16px;
+    }
+  }
+
+  @include devices(breackpoint-1024) {
+    &__btn {
+      padding: 10px 20px;
+    }
+
+    &__modal {
+      padding: 40px;
+      width: 417px;
+      height: 390px;
+    }
+
+    &__modal-title {
+      font-size: 28px;
+    }
+
+    &__modal-text {
+      font-size: 14px;
+    }
+  }
+
+  @include devices(breackpoint-900) {
+    &__contacts {
+      flex-direction: row-reverse;
+    }
+
+    &__contacts-email-text {
+      display: none;
+    }
+  }
+
+  @include devices(breackpoint-800) {
+    &__logo{
+      margin-left: 30px;
+
+      img {
+        width: 87px;
+      }
+    }
+
+    &__modal {
+      width: 342px;
+      height: 330px;
+    }
+
+    &__modal-title {
+      font-size: 24px;
+    }
+
+    &__form {
+      gap: 10px;
+    }
+
+    &__form-group input {
+      width: 260px;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+
+    &__modal-btn {
+      margin-top: 20px;
+      padding: 10px 30px;
+    }
+  }
+
+  @include devices(breackpoint-700) {
+    &__contacts-tel-text {
+      display: none;
+    }
+  }
+
+  @include devices(breackpoint-600) {
+    &__contacts {
+      gap: 15px;
+    }
+    &__btn {
+      padding: 12px 15px;
+      margin-left: 20px;
+    }
+  }
+
+  @include devices(breackpoint-500) {
+    &__btn {
+      margin-left: 15px;
+      padding: 8px;
+    }
+
+    &__btn-text {
+      display: none;
+    }
+
+    &__btn-icon {
+      display: flex;
+    }
+
+    &__modal {
+      width: 300px;
+      height: 294px;
+      padding: 35px 24px;
+    }
+
+    &__modal-text {
+      margin-top: 5px;
+      font-size: 13px;
+    }
+
+    &__form {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    &__form-group {
+      width: 100%;
+    }
+
+    &__form-input {
+      width: inherit;
+      height: 30px;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+
+    &__modal-btn {
+      padding: 10px 40px;
+    }
+  }
+
+  @include devices(breackpoint-380) {
+    &__contacts {
+      gap: 10px;
+    }
+
+    &__contacts-email-icon,
+    &__contacts-tel-icon {
+      width: 30px;
+      height: 30px;
+
+      svg {
+        width: 17px;
+      }
+    }
+
+    &__btn {
+      margin-left: 10px;
+      padding: 5px;
+    }
+
+    &__btn-icon {
+      width: 22px;
+    }
+
+    &__modal {
+      padding: 35px 20px;
+      // width: 280px;
+    }
+  }
+}
+
+.nav-menu {
+  @include devices(breackpoint-1350) {
+    &__lists {
+      gap: 30px;
+    }
+  }
+
+  @include devices(breackpoint-1300) {
+    order: -1;
+
+    // стилизация бургер-меню
+    &__toggle {
+      display: block;
+      opacity: 0;
+    }
+
+    &__btn {
+      align-items: center;
+      position: absolute;
+      // top: 8px;
+      // left: 20px;
+      width: 26px;
+      height: 19px;
+      cursor: pointer;
+      z-index: 14;
+
+      span,
+      span::before,
+      span::after {
+        display: block;
+        position: absolute;
+        width: 27px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #000000;
+      }
+
+      span::before {
+        content: '';
+        top: -8px;
+      }
+
+      span::after {
+        content: '';
+        top: 8px;
+      }
+    }
+
+    &__lists {
+      z-index: 9;
+      display: block;
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      left: -100%;
+      width: 164px;
+      height: 100%;
+      padding: 80px 0;
+      padding-left: 14px;
+      padding-right: 20px;
+      text-align: left;
+      background-color: $bg-color;
+      box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+
+    &__item {
+      padding: 20px 27px 20px 5px;
+      border-bottom: 1px solid transparent;
+      border-image: linear-gradient(to right, rgba(255, 255, 255, 0.322), rgba(255, 255, 255, 0.795), rgba(255, 255, 255, 0.247)) 1;
+
+      &:nth-child(4) {
+        border-bottom: none;
+      }
+    }
+
+    &__link {
+      color: #ffffff;
+      font-family: $montserrat-600;
+      font-size: 18px;
+    }
+
+    &__toggle:checked ~ &__btn > span {
+      transform: rotate(45deg);
+    }
+
+    &__toggle:checked ~ &__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+
+    &__toggle:checked ~ &__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    &__toggle:checked ~ &__btn > span,
+    &__toggle:checked ~ &__btn > span::before,
+    &__toggle:checked ~ &__btn > span::after {
+      background-color: #ffffff;
+    }
+
+    &__toggle:checked ~ &__lists {
+      visibility: visible;
+      left: 0;
+    }
+
+    &__btn span,
+    &__btn span::before,
+    &__btn span::after {
+      transition-duration: .25s;
+    }
+
+    &__lists,
+    &__item {
+      transition-duration: .25s;
+    }
+
+    // burger-menu end
+  }
+}
+
+#overlay {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 8;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.nav-menu__toggle:checked ~ #overlay {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#content {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-menu__toggle:checked ~ #content {
+  filter: blur(5px);
+}

@@ -1,0 +1,136 @@
+.footer {
+  @include devices(breackpoint-1350) {
+    &__nav-menu-lists {
+      gap: 30px;
+    }
+
+    &__socials {
+      margin-left: 30px;
+    }
+  }
+
+  @include devices(breackpoint-1300) {
+    &__nav-menu {
+      display: none;
+    }
+
+    &__contacts {
+      gap: 40px;
+    }
+
+    &__socials {
+      margin-left: 50px;
+    }
+
+    &__copygight {
+      gap: 180px;
+    }
+  }
+
+  @include devices(breackpoint-1200) {
+    &__bg-img img {
+      width: 1211px;
+    }
+  }
+
+  @include devices(breackpoint-1100) {
+    &__logo {
+      width: 100px;
+    }
+  }
+
+  @include devices(breackpoint-1024) {
+    &__bg-img {
+      height: 366px;
+    }
+
+    &__copygight {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  @include devices(breackpoint-900) {
+    &__bg-img {
+      height: 300px;
+
+      img {
+        top: 25%;
+      }
+    }
+
+    &__contacts {
+      gap: 20px;
+    }
+
+    &__socials {
+      margin-left: 30px;
+    }
+  }
+
+  @include devices(breackpoint-800) {
+    &__bg-img {
+      height: 250px;
+    }
+
+    &__contacts-email-text {
+      display: none;
+    }
+
+    &__socials {
+      margin-left: 40px;
+    }
+  }
+
+  @include devices(breackpoint-700) {
+    &__bg-img {
+      img {
+        top: 20%;
+      }
+    }
+
+    &__contacts-tel-text {
+      display: none;
+    }
+
+    &__copygight {
+      gap: 10px;
+      font-size: 14px;
+    }
+  }
+
+  @include devices(breackpoint-500) {
+    &__bg-img {
+      height: 175px;
+
+      img {
+        top: 22%;
+        width: 870px;
+      }
+    }
+
+    &__contacts {
+      display: none;
+    }
+
+    &__socials {
+      margin-left: auto;
+    }
+  }
+
+  @include devices(breackpoint-380) {
+    &__socials-link {
+      width: 30px;
+      height: 30px;
+
+      img {
+        width: 14px;
+      }
+    }
+
+    &__copygight {
+      font-size: 12px;
+    }
+  }
+}

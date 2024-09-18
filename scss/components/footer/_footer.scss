@@ -1,0 +1,121 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+
+  &__bg-img {
+    height: 484px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: rgba(0, 0, 0, 0.795);
+      background: -webkit-gradient(linear, left bottom, left top, from(rgb(0, 0, 0, 0.5)), color-stop(30%, rgb(255, 255, 250, 0)));
+      background: linear-gradient(360deg, rgb(0 0 0 / 99%) 0%, rgb(255 255 255 / 0%) 100%);
+    }
+
+    img {
+      z-index: -2;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 2160px;
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 15px;
+  }
+
+  &__logo img {
+    width: inherit;
+  }
+
+  &__nav-menu {
+    margin-left: 40px;
+  }
+
+  &__nav-menu-lists {
+    gap: 40px;
+  }
+
+  &__nav-menu-link {
+    font-family: $montserrat-600;
+    color: white;
+  }
+
+  &__nav-menu-link,
+  &__copygight-link {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -2px;
+      height: 0%;
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      transition: 0.3s;
+      height: 2px;
+    }
+  }
+
+  &__contacts-email-icon,
+  &__contacts-tel-icon {
+    background-color: $bg-color;
+
+    svg path {
+      fill: rgb(255, 255, 255);
+    }
+  }
+
+  &__socials {
+    margin-left: 53px;
+    gap: 10px;
+  }
+
+  &__socials-link {
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: $bg-color;
+    border-radius: 50%;
+  }
+
+  &__border {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff46;
+
+  }
+
+  &__copygight {
+    margin: 22px 0;
+    color: white;
+    gap: 229px;
+  }
+
+  &__copygight-link {
+    position: relative;
+    font-family: $montserrat-400;
+
+    &:hover::after,
+    &:focus::after {
+      transition: 0.1s;
+      height: 1px;
+    }
+  }
+}
+
+@import './footer-media';
